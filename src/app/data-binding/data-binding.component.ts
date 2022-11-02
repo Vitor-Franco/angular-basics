@@ -17,11 +17,16 @@ export class DataBindingComponent implements OnInit {
   nome = 'abc';
 
   nomeDoCurso = 'Angular';
+  valorInicial = 15;
 
   pessoa = {
     nome: 'vitor',
     idade: 21,
   };
+
+  onMudouValor(event: any) {
+    console.log(event);
+  }
 
   getValor() {
     return 4;
