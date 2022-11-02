@@ -109,16 +109,16 @@
     </div>
   </article> -->
 
-  <section>
+  <!-- <section>
     <article>
       <h3>two-way data binding</h3>
 
       <div>
-        <!-- <input
+        <input
           type="text"
           [value]="nome"
           (input)="nome = $event.target.value"
-        /> -->
+        />
 
         <input
           type="text"
@@ -145,6 +145,14 @@
         </div>
 
       </div>
+    </article>
+  </section> -->
+
+  <section>
+    <article>
+      <h3>Input/Output Properties</h3>
+
+      <app-curso [nome]="nomeDoCurso"></app-curso>
     </article>
   </section>
 </section>
