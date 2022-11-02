@@ -1,5 +1,9 @@
 
-# Comandos Angulas
+# Comandos Angular
+
+1. Instalar Angular CLI
+2. `ng new nome-projeto`
+
 
 1. `ng-serve` serve a aplicação
 2. `ng g (generate) c|componente [nome]` gera um componente
