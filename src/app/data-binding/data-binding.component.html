@@ -1,0 +1,18 @@
+<section class="property-binding">
+  <article>
+    <h3>Interpolation / Interpolação</h3>
+    <p>String renderizada com Interpolação: {{ url }}</p>
+    <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+    <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
+    <p>Curso de angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</p>
+  </article>
+
+
+  <article>
+    <h3>Property Binding / Vinculação de Propriedade</h3>
+    <p>É o valor do componente para o template</p>
+    <img src="{{ urlImage }}">
+    <img bind-src="urlImage"> <!-- bind-src é a mesma coisa que [src]="url" -->
+    <img [src]="urlImage"> <!-- o colchetes representa o Property Binding, assim n precisamos das {{}} -->
+  </article>
+</section>
