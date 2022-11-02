@@ -14,6 +14,13 @@ export class DataBindingComponent implements OnInit {
 
   isMouseOver = false;
 
+  nome = 'abc';
+
+  pessoa = {
+    nome: 'vitor',
+    idade: 21,
+  };
+
   getValor() {
     return 4;
   }

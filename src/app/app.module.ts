@@ -7,20 +7,24 @@ import { CursosModule } from './cursos/cursos.module';
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
 import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [ // Componentes, diretivas e pipes
+  declarations: [
+    // Componentes, diretivas e pipes
     AppComponent,
     MeuPrimeiroComponent,
     MeuPrimeiro2Component,
-    DataBindingComponent
+    DataBindingComponent,
   ],
-  imports: [ // Outros Módulos
+  imports: [
+    // Outros Módulos
     BrowserModule,
     AppRoutingModule,
-    CursosModule
+    CursosModule,
+    FormsModule,
   ],
   providers: [], // Serviços declarados no escopo
-  bootstrap: [AppComponent] // Componente principal ao ser executada a aplicação
+  bootstrap: [AppComponent], // Componente principal ao ser executada a aplicação
 })
-export class AppModule { }
+export class AppModule {}
